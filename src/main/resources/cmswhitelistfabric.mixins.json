@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "package": "com.sonoransoftware.cmswhitelistfabric.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "PlayerJoinMixin"
+  ],
+  "client": [],
+  "server": [],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
