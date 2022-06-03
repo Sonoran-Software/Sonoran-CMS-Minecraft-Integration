@@ -58,7 +58,6 @@ public class cmswhitelist {
 
     private void setup(final FMLCommonSetupEvent event) {
         // some preinit code
-        LOGGER.info("HELLO FROM PREINIT");
     }
 
     private void enqueueIMC(final InterModEnqueueEvent event) {
@@ -97,8 +96,6 @@ public class cmswhitelist {
             int responseStream = connection.getResponseCode();
             if (responseStream != 200) {
                 player.connection.disconnect(new TextComponent("You are not whitelisted through Sonoran CMS.\nUUID: " + uuid + " Username: " + player.getName().getString()));
-            } else {
-                player.sendMessage(new TextComponent(uuid), player.getUUID());
             }
         } catch(Exception e) {
             player.connection.disconnect(new TextComponent("Could not contact the Sonoran CMS server for whitelist. Please contact your server administrators or https://support.sonoransoftare.com"));
