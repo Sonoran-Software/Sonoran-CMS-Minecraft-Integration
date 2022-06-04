@@ -1,0 +1,5 @@
+name: SonoranCMSWhitelist
+version: '${project.version}'
+main: com.sonoransoftware.cmswhitelistplugin.Cmswhitelistplugin
+api-version: 1.15
+load: STARTUP
