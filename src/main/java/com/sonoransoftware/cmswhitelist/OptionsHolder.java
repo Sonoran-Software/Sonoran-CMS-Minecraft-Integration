@@ -16,10 +16,10 @@ public class OptionsHolder
 
         public Common(ForgeConfigSpec.Builder builder)
         {
-            builder.push("category1");
-            this.CommunityID = builder.comment("This is your SonoranCMS' Community ID.")
+            builder.push("SonoranCMS");
+            this.CommunityID = builder.comment("This is your SonoranCMS Community ID.")
                     .worldRestart().define("Community ID", "");
-            this.CommunityAPIKey = builder.comment("This is your SonoranCMS' API key.")
+            this.CommunityAPIKey = builder.comment("This is your SonoranCMS API key.")
                     .define("Community API Key", "");
             this.Identifier = builder.comment("Which identifier to use, either UUID or Username. UUID is preferred.").define("Identifier Type", "UUID");
             this.ServerID = builder.comment("The server ID found in SonoranCMS that this whitelist should check against.").define("Server ID", 1);
